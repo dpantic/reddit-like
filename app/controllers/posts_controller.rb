@@ -25,6 +25,7 @@ class PostsController < ApplicationController
   # GET /posts/new.xml
   def new
     @post = Post.new
+    @users = User.all
 
     respond_to do |format|
       format.html # new.html.erb
@@ -35,6 +36,7 @@ class PostsController < ApplicationController
   # GET /posts/1/edit
   def edit
     @post = Post.find(params[:id])
+    @users = User.all
   end
 
   # POST /posts

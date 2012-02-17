@@ -3,6 +3,10 @@ RedditLike::Application.routes.draw do
 
   resources :users
 
+  match '/home', :to => 'posts#home'
+
+  match '/link', :to => 'posts#link'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

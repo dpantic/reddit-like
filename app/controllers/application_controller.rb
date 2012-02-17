@@ -4,4 +4,13 @@ class ApplicationController < ActionController::Base
   def home
   	@title = "Home"
   end
+
+  def home
+  	@title = "Home"
+  end
+
+  def link
+  	@title = "Link"
+  end
+
 end

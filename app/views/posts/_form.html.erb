@@ -21,7 +21,9 @@
   </div>
   <div class="field">
     <%= f.label :user_id %><br />
-    <%= f.text_field :user_id %>
+  
+<%= collection_select(:posts, :user_id, @users, :id, :name, {:prompt => false })  %>
+
   </div>
   <div class="actions">
     <%= f.submit %>
