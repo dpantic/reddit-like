@@ -1,14 +1,17 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.7'
+gem 'heroku'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'sqlite3-ruby', '1.2.5', :group => :development
 
 # Use unicorn as the web server
 # gem 'unicorn'
+
 
 # Deploy with Capistrano
 # gem 'capistrano'
